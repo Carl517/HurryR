@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+
+            <com.github.florent37.shapeofview.shapes.CutCornerView
+
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:elevation="4dp"
+                app:shape_cutCorner_topRightSize="80dp"
+                app:shape_cutCorner_bottomRightSize="80dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_city"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/img_local"
+                        android:scaleType="fitXY"
+                        android:background="@mipmap/capture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="25dp"-->
+
+                    <TextView
+                        android:id="@+id/txt_location_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dimen_20dp"
+                        android:text="@string/same_city"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:text="Local Delivery "
+                        android:textAllCaps="true"
+
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+            </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+
+
+            <com.github.florent37.shapeofview.shapes.CutCornerView
+                android:layout_marginTop="30dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:elevation="4dp"
+                app:shape_cutCorner_topRightSize="80dp"
+                app:shape_cutCorner_bottomRightSize="80dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_station"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:background="@color/black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:background="@mipmap/india_trans"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+
+                        <TextView
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:text="OutStation Delivery"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+            <com.github.florent37.shapeofview.shapes.CutCornerView
+                android:layout_marginTop="30dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:elevation="4dp"
+                app:shape_cutCorner_topRightSize="80dp"
+                app:shape_cutCorner_bottomRightSize="80dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_international"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:background="@mipmap/world"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:text="International Delivery"
+                        android:textAllCaps="true"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+            </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                    <!--android:clickable="true"-->
+
+                    <ImageView
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:scaleType="fitXY"
+                        android:background="@mipmap/capture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/ic_cover"
+                        android:layout_width="40dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="visible"
+                        android:layout_height="fill_parent" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <RelativeLayout
+
+                    android:clickable="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/img_station"
+                            android:background="@drawable/ic_triangle_right"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/india_trans"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/ic_cover"
+                        android:layout_width="40dp"
+                        android:scaleType="fitCenter"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/out_station"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <RelativeLayout
+
+
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/img_international"
+                            android:background="@drawable/ic_triangle_right"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp" />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/world"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/ic_cover"
+                        android:layout_width="40dp"
+                        android:scaleType="fitCenter"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:paddingLeft="5dp"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/international_delivery"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

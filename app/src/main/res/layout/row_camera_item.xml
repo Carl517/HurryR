@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/package_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/package_background"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_5dp"></LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/image"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/round_rect_grey_border"
+                    android:layout_width="0dp"
+                    android:padding="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/sp_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height = "36dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:layout_gravity="center"
+                        android:hint="Select Work"></org.angmarch.views.NiceSpinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/round_rect_grey_border"
+                    android:padding="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id = "@+id/sp_weight"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "36dp"
+                        android:gravity = "center"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:layout_gravity="center"
+                        android:hint="Select Work">
+                    </org.angmarch.views.NiceSpinner>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:id="@+id/edt_cost"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="Package cost(Rs)"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/chk_package"
+                        android:numeric="decimal"
+                        android:maxLength="5"
+                        android:singleLine="true"
+                        android:background="@drawable/round_rect_grey_border"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Package cost(optional)" />
+
+                    <LinearLayout
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="2dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/chk_package"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/gray"
+                    android:text="@string/need_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_remove"
+                    android:text="Remove"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/lin_remove"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/com_facebook_close" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
